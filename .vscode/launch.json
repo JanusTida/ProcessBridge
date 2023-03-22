@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch ProcessBridgeTest.Invoker",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build ProcessBridgeTest.Invoker",
+            "program": "${workspaceFolder}/ProcessBridgeTest.Invoker/bin/Debug/net7.0/ProcessBridgeTest.Invoker.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal",
+        },
+        {
+            "name": "Launch ProcessBridge",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build ProcessBridge",
+            "program": "${workspaceFolder}/ProcessBridge/bin/Debug/net7.0/ProcessBridge.dll",
+            "args": ["--interpreter=mi"],
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "Launch ProcessBridgeTest.Cli",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build ProcessBridgeTest.Cli",
+            "program": "${workspaceFolder}/ProcessBridgeTest.Cli/bin/Debug/net7.0/ProcessBridgeTest.Cli.dll",
+            "args": ["--interpreter=mi"],
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        }
+    ]
+}
