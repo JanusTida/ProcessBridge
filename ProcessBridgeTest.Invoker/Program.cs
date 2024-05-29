@@ -46,7 +46,7 @@ bridgeProcess.Start();
 bridgeProcess.BeginOutputReadLine();
 bridgeProcess.BeginErrorReadLine();
 
-Task.Run(() => {
+_ = Task.Run(() => {
     string? input;
     while ((input = Console.ReadLine()) != null)
     {

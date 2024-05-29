@@ -84,7 +84,7 @@ cli.Start();
 cli.BeginOutputReadLine();
 cli.BeginErrorReadLine();
 cli.EnableRaisingEvents = true;
-Task.Run(() => {
+_ = Task.Run(() => {
     string? input;
     while ((input = Console.ReadLine()) != null)
     {
